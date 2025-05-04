@@ -1,0 +1,36 @@
+services:
+  honeypot:
+    build: ./honeypot
+    container_name: buzzpy-honeypot
+    ports:
+      - "2222:2222"
+      - "8080:8080"
+      - "8050:8050"
+    networks:
+      honeypot_net:
+        ipv4_address: 172.19.0.100
+    volumes:
+      - honeypot_logs:/app/log_files
+    environment:
+      - DEMO_MODE=${DEMO_MODE:-0}
+      - LOAD_SAMPLE_DATA=${LOAD_SAMPLE_DATA:-0}
+
+  attacker:
+    build: ./attacker
+    container_name: buzzpy-attacker
+    networks:
+      honeypot_net:
+        ipv4_address: 172.19.0.101
+    depends_on:
+      - honeypot
+
+volumes:
+  honeypot_logs:
+
+networks:
+  honeypot_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.19.0.0/24
+          gateway: 172.19.0.1

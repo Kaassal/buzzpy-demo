@@ -1,0 +1,6 @@
+2025-04-25 18:45:07,867 Command: b'ls' Client: 127.0.0.1
+2025-04-25 18:45:09,942 Command: b'pwd' Client: 127.0.0.1
+2025-04-25 18:45:13,649 Command: b'bruh' Client: 127.0.0.1
+2025-04-25 19:06:23,968 Command: b'free' Client: 127.0.0.1
+2025-04-25 20:30:01,825 Command: b'hello this is a test' Client: 127.0.0.1
+2025-04-25 20:30:02,727 Command: b'hello this is a test 2' Client: 127.0.0.1
