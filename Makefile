@@ -1,4 +1,4 @@
-.PHONY: build run demo attack clean prune-networks
+.PHONY: build run demo attack clean
 
 build:
 	docker-compose build
@@ -16,4 +16,3 @@ clean:
 	docker-compose down -v --remove-orphans
 	docker network prune -f
 	docker volume prune -f
-	docker network rm $(shell docker network ls -q --filter name=buzzpy) 2>/dev/null || true
